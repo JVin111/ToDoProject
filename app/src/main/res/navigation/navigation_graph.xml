@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/cardListFragment">
+
+    <fragment
+        android:id="@+id/cardListFragment"
+        android:name="com.example.todoproject.ui.board_fragment.BoardFragment"
+        android:label="CardListFragment"
+        tools:layout="@layout/board_fragment">
+        <action
+            android:id="@+id/action_cardListFragment_to_cardDataFragment"
+            app:destination="@id/cardDataFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardDataFragment"
+        android:name="com.example.todoproject.ui.card_data_fragment.CardDataFragment"
+        android:label="CardDataFragment"
+        tools:layout="@layout/card_data_fragment" />
+
+</navigation>

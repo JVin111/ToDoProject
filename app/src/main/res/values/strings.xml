@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToDoProject</string>
+    <string name="save">Save</string>
+    <string name="card_name">Card name</string>
+    <string name="card_text">Card text</string>
+    <string name="add_card">Add card</string>
+</resources>
